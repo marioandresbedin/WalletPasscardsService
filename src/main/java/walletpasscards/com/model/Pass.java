@@ -1,54 +1,29 @@
 package walletpasscards.com.model;
 
-import java.util.Date;
-
 public class Pass {
 
-	static final String INSURANCE_TEMPLATE_ID = "5681803151278080";
 	static final String GYM_TEMPLATE_ID = "5343826923487232";
 
-	static final String AUTH_HEADER_ID = "zYdWCkbJKfOCxAgRYAwAYpcoZujHaZghUELUuhgMgUPoDMpmmZWuWmrnDZcItBWG";
-
-	private String nameInsures;
-	private String policyNumber;
-	private Date effectiveDate;
-
 	private String nombreSocio;
-	private String plan;
-	private Date fechaVto;
+	private String dni;
+	private String nroSocio;
+	private String clases;
+	private String cantClases;
+	private String email;
+	private String fechaVto;
+	private String estado;
+	private String serialNumber;
+	private String cantCuotas;
 
-	public Date getFechaVto() {
-		return fechaVto;
+
+	public String getSerialNumber() {
+		return serialNumber;
 	}
 
-	public void setFechaVto(Date fechaVto) {
-		this.fechaVto = fechaVto;
+	public void setSerialNumber(String serialNumber) {
+		this.serialNumber = serialNumber;
 	}
-
-	public String getNameInsures() {
-		return nameInsures;
-	}
-
-	public void setNameInsures(String nameInsures) {
-		this.nameInsures = nameInsures;
-	}
-
-	public String getPolicyNumber() {
-		return policyNumber;
-	}
-
-	public void setPolicyNumber(String policyNumber) {
-		this.policyNumber = policyNumber;
-	}
-
-	public Date getEffectiveDate() {
-		return effectiveDate;
-	}
-
-	public void setEffectiveDate(Date effectiveDate) {
-		this.effectiveDate = effectiveDate;
-	}
-
+	
 	public String getNombreSocio() {
 		return nombreSocio;
 	}
@@ -57,12 +32,69 @@ public class Pass {
 		this.nombreSocio = nombreSocio;
 	}
 
-	public String getPlan() {
-		return plan;
+	public String getDni() {
+		return dni;
 	}
 
-	public void setPlan(String plan) {
-		this.plan = plan;
+	public void setDni(String dni) {
+		this.dni = dni;
 	}
+
+	public String getNroSocio() {
+		return nroSocio;
+	}
+
+	public void setNroSocio(String nroSocio) {
+		this.nroSocio = nroSocio;
+	}
+
+	public String getClases() {
+		return clases;
+	}
+
+	public void setClases(String clases) {
+		this.clases = clases;
+	}
+
+	public String getFechaVto() {
+		return fechaVto;
+	}
+
+	public void setFechaVto(String fechaVto) {
+		this.fechaVto = fechaVto;
+	}
+
+	public String getEstado() {
+		return estado;
+	}
+
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getCantCuotas() {
+		return cantCuotas;
+	}
+
+	public void setCantCuotas(String cantCuotas) {
+		this.cantCuotas = cantCuotas;
+	}
+
+	public String getCantClases() {
+		return cantClases;
+	}
+
+	public void setCantClases(String cantClases) {
+		this.cantClases = cantClases;
+	}
+
 
 }

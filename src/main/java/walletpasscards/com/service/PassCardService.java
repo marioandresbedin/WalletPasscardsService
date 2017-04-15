@@ -1,23 +1,26 @@
 package walletpasscards.com.service;
 
-import java.util.List;
+import org.json.JSONArray;
 
 import walletpasscards.com.model.Pass;
 import walletpasscards.com.model.PassResponse;
+import walletpasscards.com.model.PassUpdateResponse;
+
+
 
 public interface PassCardService {
 
 	Pass findById(long id);
 
 	Pass findByName(String name);
-
-	PassResponse createPolicyPass(Pass pass);
 	
 	PassResponse createGymPass(Pass pass);
+	
+	PassUpdateResponse updateGymPass(Pass pass);
 
-	List<Pass> findAllPasses();
+	JSONArray findAllPasses();
 	
 	void updatePass(Pass pass);
-
+	
 
 }

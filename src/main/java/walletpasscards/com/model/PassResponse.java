@@ -5,6 +5,8 @@ public class PassResponse {
 	private String serialNumber;
 	private String passTypeIdentifier;
 	private String url;
+	private Integer status;
+	
 
 	public String getSerialNumber() {
 		return serialNumber;
@@ -28,5 +30,13 @@ public class PassResponse {
 
 	public void setUrl(String url) {
 		this.url = url;
+	}
+
+	public Integer getStatus() {
+		return status;
+	}
+
+	public void setStatus(Integer status) {
+		this.status = status;
 	}
 }
